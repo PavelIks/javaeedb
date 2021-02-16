@@ -1,0 +1,30 @@
+╞╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼
+╞╼╼Для IntelliJ IDEA Community Edition:
+╎1) Скачать exe-шник с https://www.apachefriends.org/ru/index.html
+╎2) Запустить xampp-windows-x64-8.0.0-2-VS16-installer.exe
+╎3) Обязательно выбрать Tomcat и Apache
+╎4) Выбрать путь
+╎5) Установить
+╞╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼
+╞╼╼Для Eclipse IDE for Enterprise Java Developers:
+╞╼Установка Eclipse:
+╎1) Скачать exe-шник с https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-12/R/eclipse-inst-jre-win64.exe
+╎2) Запустить eclipse-inst-jre-win64.exe
+╎3) Выбрать Eclipse IDE for Enterprise Java Devolpers
+╎4) Нажать на Install и запомнить путь: C:\Users\User\eclipse\jee-2020-
+╎
+╞╼Создание сервера для Eclipse:
+╎0) XAMPP, IntelliJ IDEA и т.д. закрыть и не запускать!
+╎1) File -> New -> Dynamic Web Project
+╎2) Target Runtime -> New runtime -> Выбрать в Apache "Apache Tomcat v7.00 Server" -> Finish
+╎3) Dynamic web model version -> 7.0 -> Finish 
+╎4) Java Resources -> src -> New -> Servlet
+╎
+╞╼Если всё в коде красное:
+╎1) Кликнуть ПКМ по окну Project Explorer и выбрать Properties
+╎2) Java Build Path -> Libraries
+╎3) Кликнуть ЛКМ по Modulepath и нажать на Add External JARs...
+╎4) Найти файл servlet-api.jar по пути: C:\Users\User\eclipse-workspace\lib
+╎5) Выделить его нажать на кнопку Открыть
+╎5) Нажать на кнопку Apply and Close
+╞╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼╼

@@ -1,0 +1,66 @@
+1) Скачать IDE: https://dev.mysql.com/downloads/file/?id=500617 (нажать на No thanks, just start my download.)
+2) Скачать сервак: https://dev.mysql.com/downloads/file/?id=501541 (нажать на No thanks, just start my download.)
+3) Установить сервак:
+3.1) Нажать Add... и в Select Products перейти в Aviable Products -> MySQL Servers -> MySQL Server -> MySQL Server 8.0
+3.2) Нажать на MySQL Server 8.0.23-X64
+3.3) Нажать на зелёную стрелочку направо
+3.4) Нажать Next
+3.5) В Instailation выбрать MySQL Server 8.0.23
+3.6) Нажать Execute
+3.7) Подождать...
+3.8) Нажать Next
+3.9) Нажать Next
+3.10) Нажать Next
+3.11) Ввести пароль, например, 123
+3.12) Нажать Next
+3.13) Нажать Next
+3.14) Нажать Execute
+3.15) Подождать...
+3.16) Нажать Finish
+3.17) Нажать Next
+3.18) Нажать Finish
+3.19) Можно закрывать
+4) Установить MySQL Workbench (среду разработки)
+4.1) Настроить MySQL Workbench
+:
+4.2) Нажать на плюсик (+) возле MySQL Connections и откроется Setup New Connection
+4.3) В Connection Name ввести имя, например, Kuku
+4.4) Нажать на Configure Server Managment...
+4.5) Ввести пароль
+4.6) Нажать Next
+4.7) Нажать Next
+4.8) Нажать Next
+4.9) Нажать Finish
+4.10) Нажать Test Connection
+4.11) Нажать OK
+4.12) Нажать OK
+4.13) Появляется подключение в MySQL Workbench
+
+5) Перейти в Navigator -> Schemas
+6) В навигации нажать на картинку, в которой изображены "SQL" и "+"
+7) Скопировать и вставить в запрос вот это:
+CREATE DATABASE TestSchema;
+8) Нажать на картинку, в которой изображён "ϟ" после чего очитисть запрос
+9) Скопировать и вставить в запрос вот это:
+
+CREATE TABLE `TestSchema`.TestTable
+(
+    ID_ INT AUTO_INCREMENT PRIMARY KEY,
+    Name_ VARCHAR(30) NOT NULL
+);
+
+или это:
+
+USE TestSchema;
+CREATE TABLE TestTable
+(
+    ID_ INT AUTO_INCREMENT PRIMARY KEY,
+    Name_ VARCHAR(30) NOT NULL
+);
+
+P.S. Создать БД сначала естественно...
+
+10) Нажать на картинку, в которой изображён "ϟ" после чего очитисть запрос
+11) Скопировать и вставить в запрос вот это:
+INSERT INTO `TestSchema`.TestTable (Name_) VALUES ('TestValue1')
+12) MySQL с БД и таблицами готово

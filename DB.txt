@@ -1,0 +1,16 @@
+DROP DATABASE VegetablesDB
+USE VegetablesDB
+CREATE DATABASE VegetablesDB
+
+DROP TABLE [VegetablesTable]
+CREATE TABLE [VegetablesTable]
+(
+	[ID]		INT			IDENTITY,
+	[Name]		VARCHAR(20)
+)
+
+SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'VegetablesTable';
+
+INSERT INTO [VegetablesTable] VALUES ('Cucumber')
+
+SELECT * FROM [VegetablesTable]
